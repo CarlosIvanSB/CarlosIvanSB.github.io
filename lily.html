@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi niña</title>
+    <link rel="stylesheet" href="st.css">
+    <style>
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://media.admagazine.com/photos/618a7dbc58ac69e38abb6c2c/16:9/w_1280,c_limit/43884.jpg'); /* Cambia esta URL por la de tu imagen de fondo */
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+        }
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            cursor: pointer;
+        }
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 160px;
+            border-radius: 50px 50px 0 0;
+            background: rgb(236, 6, 117);
+        }
+        .heart::before {
+            left: 50px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        .heart::after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        .letter {
+            display: none;
+            position: absolute;
+            top: 120px;
+            width: 80%;
+            height: 70%;
+            padding: 20px;
+            background: white;
+            border: 2px solid #ccc;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow-y: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart" onclick="toggleLetter()"></div>
+    <div class="letter" id="letter">
+        <h2>Para mi niña</h2>
+        <p>Querida [lily],</p>
+        <p>Por simple casualidad de la vida, un día te respondí una historia, algo que me dio gracia. Después de unos días seguimos hablando y la verdad pensé que me ibas a ignorar, pero no, me escribiste y hablamos de tantas cosas que nunca nos aburrimos de hablar. Desde ese punto sentí una conexión muy fuerte; yo mismo me sorprendí de ello y por un momento pensé que me estaba equivocando, pero con el tiempo vi que no era así.
+
+            Descubrí que estaba viéndote de otra manera, te estaba viendo como algo más que una amiga y eso hizo en mí como un ¡BOOM! porque no sabía qué hacer, no sabía si me ibas a corresponder. Pero me demostraste que también querías eso y encontramos este sentimiento. Me alegra haberlo encontrado contigo y descubrirlo así contigo.
+            
+            Me encanta tu personalidad, tu forma de ser, tu forma de pensar, tu forma de querer. Para mí eres una persona muy linda en todos los sentidos y, en verdad, desde que empecé no hay un día en que deje de pensarte. Este sentimiento cada vez se vuelve más grande, es un sentimiento muy nuevo para mí, pero que te lo quiero dar. Quiero que sientas esto, esto tan bonito que no pienso dejar por nada del mundo. Me encantas de una manera que no entiendo, quiero llegar a amarte de una manera que no se haya visto nunca, quiero estar contigo, vivir contigo tantas cosas, expresarte y darte tantas cosas.
+            
+            Hoy, 4 de julio, desde el fondo de mis sentimientos, desde el fondo de mi alma, ha crecido mucho más esto, se ha vuelto mucho más grande. Aunque sé que ahorita mismo no puedo darte materialmente todo lo que quiero darte, te prometo que lo haré, te prometo que trabajaré mucho en muchas cosas para estar siempre contigo y darte todas las cosas lindas que te mereces en esta vida. La distancia que ahorita nos separa no se compara ni de cerca a lo que siento por ti y al amor que tú y yo vamos a crear. El anhelo de verte y tenerte es muy grande y no pienso renunciar a ello, no pienso dejar de luchar por ello, no pienso dejar de trabajar por ello, no pienso alejarte de mi vida.
+            
+            Mi niña, me gustaría saber algo: ¿puedo ser esa persona que esté siempre para ti? ¿Puedo ser el hombre que quieres en tu vida? ¿Puedo ser el hombre que te haga feliz? ¿Puedo ser el hombre que te haga sentir tantas cosas? ¿Puedo ser esa persona que sabes que estará para ti en buenas y malas? ¿Puedo ser esa persona que te haga feliz, que te haga sonreír? ¿Puedo ser esa persona que te haga sentir tan bien? ¿Puedo ser esa persona que te dé amor? ¿Puedo ser esa persona con la que quieres crecer? ¿Puedo ser esa persona con la que quieres pasar el resto de tu vida?
+            
+            Mi niña...
+
+            
+            ¿Puedo y me consedes el gran honor de ser tu novio?.
+        </p>
+        <p>Te amo mucho.</p>
+        <p>Con amor, [Carlos Ivan]</p>
+    </div>
+    
+
+    <!-- Reproductor de audio fijo en la parte inferior -->
+    <div class="audio-player">
+        <audio controls>
+            <source src="Y2meta.app - Micro TDH - Cafuné [Letra] (128 kbps).mp3" type="audio/mpeg">
+            Tu navegador no admite la reproducción de audio.
+        </audio>
+    </div>
+
+    <script>
+        function toggleLetter() {
+            var letter = document.getElementById('letter');
+            if (letter.style.display === 'none' || letter.style.display === '') {
+                letter.style.display = 'block';
+            } else {
+                letter.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
